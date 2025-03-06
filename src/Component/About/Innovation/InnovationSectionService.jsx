@@ -2,13 +2,13 @@ import React from "react";
 import { useState } from "react";
 import { DragDropContext, Droppable, Draggable } from "react-beautiful-dnd";
 
-const FacultySeaction = () => {
+const InnovationSectionService = () => {
   const [rotatedStates, setRotatedStates] = useState({});
 
   const [sliders, setSliders] = useState([
     {
       id: "1",
-      title: "Dr. Heng Sovannrith",
+      title: "Service 1",
       subtitle: "",
       linkTitle: "",
       urlLink: "",
@@ -21,7 +21,7 @@ const FacultySeaction = () => {
   const handleAddSlider = () => {
     const newSlider = {
       id: `${Date.now()}`,
-      title: `Dr. Heng Sovannrith ${sliders.length + 1}`,
+      title: `Service ${sliders.length + 1}`,
       subtitle: "",
       linkTitle: "",
       urlLink: "",
@@ -59,7 +59,7 @@ const FacultySeaction = () => {
               <details className="group [&_summary::-webkit-details-marker]:hidden ">
                 <summary className="flex justify-between cursor-pointer rounded-lg px-2 py-2 text-xl font-medium w-full border-0 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset my-2">
                   <label className="block text-2xl font-medium leading-6 text-gray-900 indent-4 ">
-                    Faculty Item
+                    Service
                   </label>
                   <span className="shrink-0 transition-transform duration-300 group-open:-rotate-180">
                     <svg
@@ -169,7 +169,7 @@ const FacultySeaction = () => {
                                       {/* Title Field */}
                                       <div className="flex-1">
                                         <label className="block text-xl font-medium leading-6 text-white-900">
-                                          Name
+                                          Title
                                         </label>
                                         <div className="mt-2">
                                           <input
@@ -195,17 +195,17 @@ const FacultySeaction = () => {
                                     <div className="flex flex-row gap-4 px-4 py-2">
                                       <div className="flex-1">
                                         <label className="block text-xl font-medium leading-6 text-white-900">
-                                          Position
+                                          Description
                                         </label>
                                         <div className="mt-2">
-                                          <textarea className="h-15 block w-100 rounded-md border-0 py-2 pl-5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-2xl sm:leading-6"></textarea>
+                                          <textarea className="h-30 block w-100 rounded-md border-0 py-2 pl-5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-2xl sm:leading-6"></textarea>
                                         </div>
                                       </div>
 
                                       {/* <div className="flex flex-row gap-4 px-4 py-2"> */}
                                       <div className="flex-1">
                                         <label className="block text-xl font-medium leading-6 text-white-900">
-                                          Photos
+                                          Image
                                         </label>
                                         <div class="flex items-center justify-center w-full mt-2 border-1">
                                           <label
@@ -286,4 +286,4 @@ const FacultySeaction = () => {
   );
 };
 
-export default FacultySeaction;
+export default InnovationSectionService;

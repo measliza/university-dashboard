@@ -1,8 +1,7 @@
 import React from "react";
-import FacultySection from "./FacultySection";
-import FacultySocial from "./FacultySocial";
+import Graduate from "./Graduate";
 
-const Faculty = () => {
+const Academics = () => {
   return (
     <section className="px-8 py-2">
       <div className="border-2 rounded-lg overflow-x-scroll hide-scroll-bar">
@@ -12,7 +11,7 @@ const Faculty = () => {
               <details className="group [&_summary::-webkit-details-marker]:hidden ">
                 <summary className="flex justify-between cursor-pointer rounded-lg px-2 py-2 text-xl font-medium w-full border-0 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset my-2">
                   <label className="block text-2xl font-medium leading-6 text-gray-900 indent-4 ">
-                    Faculty
+                    Research
                   </label>
                   <span className="shrink-0 transition-transform duration-300 group-open:-rotate-180">
                     <svg
@@ -71,21 +70,9 @@ const Faculty = () => {
                       </div>
                     </div>
                   </div>
-
-                  <div className="flex flex-row gap-4 px-4 py-2">
-                    <div className="flex-1">
-                      <label className="block text-xl font-medium leading-6 text-white-900">
-                        Subtitle
-                      </label>
-                      <div className="mt-2">
-                        <textarea className="h-32 block w-full rounded-md border-0 py-2 pl-5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-2xl sm:leading-6"></textarea>
-                      </div>
-                    </div>
-                  </div>
                 </div>
 
-                <FacultySection />
-                <FacultySocial />
+                <Graduate />
               </details>
             </ul>
           </div>
@@ -94,5 +81,4 @@ const Faculty = () => {
     </section>
   );
 };
-
-export default Faculty;
+export default Academics;
